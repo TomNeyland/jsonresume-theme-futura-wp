@@ -170,8 +170,9 @@
                     </ul>
                   </li>
                 </ul>
-                <hr />{{/skills}}
+                {{/skills}}
               </div>
+              <hr />
             </div>
           </section>
           {{/skills.length}}

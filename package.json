@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-futura",
-  "version": "0.1.4",
+  "name": "jsonresume-theme-futura-wp",
+  "version": "0.1.5",
   "description": "Theme for JSON Resume based on Modern",
-  "author": "Mark Andrews",
+  "author": "Tom Neyland",
   "repository": {
     "type": "git",
-    "url": "https://github.com/markau/jsonresume-theme-futura"
+    "url": "https://github.com/TomNeyland/jsonresume-theme-futura-wp"
   },
   "license": "MIT",
   "dependencies": {

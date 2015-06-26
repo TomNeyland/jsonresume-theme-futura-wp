@@ -152,6 +152,7 @@
             </p>
             {{/languages}}
           </div>
+          <hr />
         </div>
       </section>
       {{/languages.length}}

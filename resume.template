@@ -76,7 +76,7 @@
               <p class="basics-contact"><strong>Email:</strong> {{basics.email}}</p>
               {{/basics.email}}
               {{#basics.phone}}
-              <p class="basics-contact"><strong>Location:</strong> {{basics.location.city}}, {{basics.location.countrycode</p>
+              <p class="basics-contact"><strong>Location:</strong> {{basics.location.city}}, {{basics.location.countrycode}}</p>
               {{/basics.phone}}
               {{#profiles.twitter}}
               <p class="basics-contact"><strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a></p>

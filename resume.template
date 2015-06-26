@@ -69,15 +69,15 @@
             </header>
             <div class="col-md-9">
               <p class="basics-summary">{{basics.summary}}</p>
+              {{#basics.location.city}}
+              <p class="basics-contact"><strong>Location:</strong> {{basics.location.city}}, {{basics.location.region}}</p>
+              {{/basics.location.city}}
               {{#basics.phone}}
               <p class="basics-contact"><strong>Phone:</strong> {{basics.phone}}</p>
               {{/basics.phone}}
               {{#basics.email}}
               <p class="basics-contact"><strong>Email:</strong> {{basics.email}}</p>
               {{/basics.email}}
-              {{#basics.phone}}
-              <p class="basics-contact"><strong>Location:</strong> {{basics.location.city}}, {{basics.location.region}}</p>
-              {{/basics.phone}}
               {{#profiles.twitter}}
               <p class="basics-contact"><strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a></p>
               {{/profiles.twitter}}

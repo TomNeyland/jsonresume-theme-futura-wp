@@ -185,7 +185,7 @@
               <div class="skills">
                 {{#publications}}
                 <h4>{{name}}</h4>
-                <h4>{{publisher}}</h4>
+                <h5>{{publisher}}</h5>
                 <p><a href="{{website}}">{{website}}</a></p>
                 <p>{{summary}}</p>
                 <hr />{{/publications}}

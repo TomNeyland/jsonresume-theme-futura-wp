@@ -137,6 +137,24 @@
         </div>
       </section>
       {{/education.length}} 
+      
+      {{#languages.length}}
+      <section class="row">
+        <header class="col-md-3">
+          <h3 class="section-heading">Languages</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="row-fluid skills">
+            {{#languages}}
+
+            <p><strong>{{language}}</strong> -
+              {{fluency}}
+            </p>
+            {{/languages}}
+          </div>
+        </div>
+      </section>
+      {{/languages.length}}
 
       {{#publications.length}}
       <section class="row">

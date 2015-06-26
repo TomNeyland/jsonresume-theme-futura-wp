@@ -52,15 +52,15 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-12 col-sm-12">
               <h1>{{basics.name}}<h1>
-              <h2>{{basics.location.city}}</h2>
+              <!-- <h2>{{basics.location.city}}</h2> -->
             </div>
-            {{#basics.gravatar}}
+            <!-- {{#basics.gravatar}}
             <div class="col-md-6 col-sm-12">
               <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}" style="width: 100px; height: 100px; margin-top: 20px;">
             </div>
-            {{/basics.gravatar}}
+            {{/basics.gravatar}} -->
           </div>
           <hr />
           <section class="row">
@@ -75,6 +75,9 @@
               {{#basics.email}}
               <p class="basics-contact"><strong>Email:</strong> {{basics.email}}</p>
               {{/basics.email}}
+              {{#basics.phone}}
+              <p class="basics-contact"><strong>Location:</strong> {{basics.location.city}}, {{basics.location.countrycode</p>
+              {{/basics.phone}}
               {{#profiles.twitter}}
               <p class="basics-contact"><strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a></p>
               {{/profiles.twitter}}
@@ -116,7 +119,7 @@
                 <h3>{{studyType}}</h3>
                 <h4>{{area}}</h4>
                 <h4 class="institution-name">{{institution}}</h4>
-                <p>{{endDateYear}}</p>
+                <p>{{startDateYear}}</p> - <p>{{endDateYear}}</p>
                 {{#summary}}
                 <p>{{summary}}</p>
                 {{/summary}}
@@ -167,9 +170,8 @@
                     </ul>
                   </li>
                 </ul>
-                {{/skills}}
+                <hr />{{/skills}}
               </div>
-              <hr />
             </div>
           </section>
           {{/skills.length}}
@@ -182,6 +184,7 @@
               <div class="skills">
                 {{#publications}}
                 <h4>{{name}}</h4>
+                <h4>{{publisher}}</h4>
                 <p><a href="{{website}}">{{website}}</a></p>
                 <p>{{summary}}</p>
                 <hr />{{/publications}}
@@ -218,7 +221,7 @@
             <div class="col-md-9">
               <div class="row-fluid skills">
                 {{#references}}
-                <p>{{reference}} -
+                <p>{{reference}} &mdash;
                   <strong>{{name}}</strong>
                 </p>
                 {{/references}}
